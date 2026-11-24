@@ -10,6 +10,27 @@ uv run python -m robotvision.main
 
 Press `q` to quit.
 
+## Voice chat setup
+
+1. Get a free API key at https://console.groq.com/keys
+2. Copy `.env.example` to `.env` and paste the key: `GROQ_API_KEY=gsk_...`
+   (`.env` is gitignored, so the key never ends up on GitHub.)
+3. Run the app. When it sees a person it starts listening (HUD shows `Mic: listening`).
+   Ask things like "where is the library?" or "how do I pay my fees?".
+
+Speech-to-text is Groq Whisper (`whisper-large-v3-turbo`), and replies come from
+`openai/gpt-oss-20b` on Groq. Without a key, the bot still runs with gestures only.
+
+### Campus database
+
+Everything the bot knows about Tongmyong University is in `data/campus.json`: all 48 numbered
+places from the official campus map (with Korean names), plus offices, hours, phone numbers,
+buses, the shuttle and dorm info from tu.ac.kr. Each entry has a `source`. The bot answers campus
+questions **only** from this file; if something isn't there it says so and points to the main office.
+
+Set `robot_location` in the file to where the robot stands (e.g. "inside Main Gate 1, next to the
+fountain") and it will give directions from there. `aliases` are the words people might say for a place.
+
 ## How it behaves
 
 When someone steps in front of the camera, Nova greets them ("Ohh, hello! How are you?").
@@ -33,6 +54,12 @@ conversation so far, and each reply is picked at random from a few variations.
 Edit `robotvision/phrases.py` to change what it says. Edit `robotvision/config.py` for its name,
 voice (Zira/David), speed, timings and thresholds.
 
+## Architecture
+
+![System architecture](docs/architecture.png)
+
+Regenerate after changes: `python docs/make_architecture.py`
+
 ## Layout
 
 ```
@@ -47,6 +74,10 @@ robotvision/
   logic/stabilizer.py   gesture must hold N frames before it counts
   logic/presence.py     person arrived / left events
   logic/behavior.py     personality + conversation state -> phrase
+  logic/assistant.py    AI replies (Groq LLM + campus info), background thread
+  speech/listener.py    mic -> speech detection -> Groq Whisper, background thread
+  knowledge/retriever.py  finds campus entries relevant to a question
+data/campus.json        the campus database (edit me)
   feedback/voice.py     pyttsx3 TTS in a background thread
   feedback/overlay.py   hand skeleton + HUD drawing
 ```

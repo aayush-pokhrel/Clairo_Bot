@@ -1,8 +1,12 @@
 """All tunable settings in one place. Phrases live in phrases.py."""
 
+import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(ROOT / ".env.example")  # GROQ_API_KEY lives here (gitignored, never committed)
 
 # --- Camera ---
 CAMERA_INDEX = 0
@@ -39,3 +43,17 @@ VOICE_ENABLED = True
 VOICE_NAME = "Zira"  # part of an installed voice name ("Zira", "David"), or None for default
 VOICE_RATE = 165  # words per minute; a bit slower sounds friendlier
 VOICE_VOLUME = 1.0
+
+# --- Voice conversation (Groq: free API key at https://console.groq.com/keys) ---
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+CHAT_ENABLED = True  # turns off automatically if GROQ_API_KEY is missing
+STT_MODEL = "whisper-large-v3-turbo"  # speech -> text
+LLM_MODEL = "openai/gpt-oss-20b"  # fast; "openai/gpt-oss-120b" is smarter but slower
+LLM_REASONING_EFFORT = "low"  # "low" keeps replies fast; set None for models without reasoning
+HISTORY_TURNS = 6  # how many back-and-forths the bot remembers within one conversation
+CAMPUS_DB = ROOT / "data" / "campus.json"
+
+# --- Microphone ---
+MIC_DEVICE = None  # None = system default; or a device index/name from `python -m sounddevice`
+MIC_MIN_RMS = 300  # loudness needed to count as speech; raise in noisy halls
+MIC_SILENCE_SECONDS = 0.8  # this much quiet = the person finished their sentence

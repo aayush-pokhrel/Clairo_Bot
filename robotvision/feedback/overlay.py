@@ -38,10 +38,13 @@ def draw_faces(img, boxes):
         cv2.rectangle(img, (x1, y1), (x2, y2), YELLOW, 2, cv2.LINE_AA)
 
 
-def draw_hud(img, fps, confirmed, last_phrase, present=False, state=""):
+def draw_hud(img, fps, confirmed, last_phrase, present=False, state="", mic="off", heard=None):
     _text(img, f"FPS: {fps:.0f}", (10, 30))
     _text(img, f"Gesture: {confirmed or '-'}", (10, 60))
     _text(img, f"Person: {'yes' if present else 'no'}   Mood: {state}", (10, 90))
+    _text(img, f"Mic: {mic}", (10, 120))
+    if heard:
+        _text(img, f'You: "{heard[:70]}"', (10, img.shape[0] - 55), 0.8, GREEN)
     if last_phrase:
         h = img.shape[0]
         _text(img, f'Robot: "{last_phrase}"', (10, h - 20), 1.0, YELLOW)

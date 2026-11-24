@@ -1,6 +1,7 @@
 """Non-blocking text-to-speech using pyttsx3 in a background thread."""
 
 import threading
+import time
 
 
 class Voice:
@@ -13,6 +14,8 @@ class Voice:
         # arrives too, the newest replaces the older one so the robot never lags behind.
         self._pending = None
         self._closed = False
+        self._speaking = False
+        self._ended_at = 0.0
         self._cond = threading.Condition()
         if enabled:
             threading.Thread(target=self._worker, daemon=True).start()
@@ -24,6 +27,10 @@ class Voice:
             self._pending = text
             self._cond.notify()
 
+    def is_busy(self, tail=0.6):
+        """True while talking, with a phrase waiting, or just finished (echo dies down)."""
+        return self._speaking or self._pending is not None or time.monotonic() - self._ended_at < tail
+
     def _worker(self):
         import pyttsx3
 
@@ -34,6 +41,7 @@ class Voice:
                 if self._closed:
                     return
                 text, self._pending = self._pending, None
+                self._speaking = True
             try:
                 # A fresh engine per phrase avoids pyttsx3's known hang on
                 # repeated runAndWait() calls. It must live in this thread (COM).
@@ -49,8 +57,11 @@ class Voice:
                 engine.runAndWait()
                 engine.stop()
                 del engine
-            except Exception as e:  # never let TTS kill the vision loop
+            except Exception as e:  # never let TTS kill the vision loop  # noqa: BLE001
                 print(f"[voice] error: {e}")
+            finally:
+                self._ended_at = time.monotonic()
+                self._speaking = False
 
     def close(self):
         with self._cond:

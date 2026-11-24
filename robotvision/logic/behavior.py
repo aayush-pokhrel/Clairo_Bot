@@ -40,6 +40,12 @@ class Behavior:
         self.state = "away"
         return None if was_quiet else self._pick("goodbye")
 
+    def on_speech(self):
+        """The person said something (the AI answers it). Mark them as engaged."""
+        if self.state == "away":
+            self.state = "chatting"
+            self._met_before = True
+
     # --- gestures ---
 
     def on_gesture(self, gesture):

@@ -1,0 +1,389 @@
+{
+  "_comment": "Tongmyong University (Busan) campus data. Collected 2026-11-24 from the official sites tu.ac.kr/english, tu.ac.kr/tour and tour.tu.ac.kr/ic, plus the official campus map (map_250304). Building numbers/names come from the map legend; 'location' hints are read off the map relative to Main Gate 1 and other landmarks (not official walking directions). Set robot_location to where the robot will stand.",
+  "campus_name": "Tongmyong University in Busan",
+  "help_desk": "the main office in the Main Building (Building 1), phone 051-629-3014",
+  "robot_location": "",
+  "places": [
+    {
+      "name": "Main Building",
+      "korean_name": "대학본관",
+      "aliases": ["main building", "headquarters", "administration", "admin", "admin office", "president's office", "1"],
+      "building_number": "1",
+      "location": "Up the hill on the left side of campus, behind the round plaza (Circular Plaza, 34). From Main Gate 1, walk up the main road and turn left at the fountain.",
+      "inside": "University administration. A rest area for students with disabilities is on the 1st floor.",
+      "phone": "Main number 051-629-3014",
+      "source": "campus map; tu.ac.kr/english footer"
+    },
+    {
+      "name": "Health and Welfare Building",
+      "korean_name": "보건복지관",
+      "aliases": ["health and welfare", "welfare building", "health building", "nursing", "2"],
+      "building_number": "2",
+      "location": "Next to the Main Building (Building 1), on its right side, near the main road.",
+      "inside": "College of Health, Welfare and Education.",
+      "source": "campus map"
+    },
+    {
+      "name": "Architecture and Design Building",
+      "korean_name": "건축디자인관",
+      "aliases": ["architecture", "design building", "architecture building", "3"],
+      "building_number": "3",
+      "location": "On the left side of the Circular Plaza (34), below the Main Building.",
+      "inside": "College of Architecture and Design.",
+      "source": "campus map"
+    },
+    {
+      "name": "Graduate School",
+      "korean_name": "대학원",
+      "aliases": ["graduate school", "grad school", "masters", "phd", "postgraduate", "4"],
+      "building_number": "4",
+      "location": "Beside the main road, just up and to the left of the fountain, next to the Circular Plaza.",
+      "source": "campus map"
+    },
+    {
+      "name": "Architectural Engineering Practice Building",
+      "korean_name": "건축공학실습동",
+      "aliases": ["architectural engineering", "practice building", "workshop", "5"],
+      "building_number": "5",
+      "location": "Far left, lower side of campus, next to the Student Union Building (6).",
+      "source": "campus map"
+    },
+    {
+      "name": "Student Union Building",
+      "korean_name": "학생회관",
+      "aliases": ["student union", "student center", "student council", "clubs", "club room", "career support", "career center", "6"],
+      "building_number": "6",
+      "location": "Lower left side of campus, next to Tongmyong Stadium (7) and Parking Lot 1 (30).",
+      "inside": "Student council and clubs. A club room for students with disabilities is on the 3rd floor. TU Career Support and the campus organizations association are in suite 207 of the Student Center.",
+      "phone": "Career support and campus organizations: 051-629-3968",
+      "source": "campus map; tu.ac.kr/english/sub05_02.do"
+    },
+    {
+      "name": "Tongmyong Stadium",
+      "korean_name": "동명스타디움",
+      "aliases": ["stadium", "tongmyong stadium", "7"],
+      "building_number": "7",
+      "location": "Lower left corner of campus, next to the Student Union Building (6).",
+      "source": "campus map"
+    },
+    {
+      "name": "Student Welfare Building and Cafeteria",
+      "korean_name": "학생복지관",
+      "aliases": ["cafeteria", "canteen", "food", "lunch", "dinner", "eat", "hungry", "restaurant", "meal", "halal", "vegetarian", "student welfare", "8"],
+      "building_number": "8",
+      "location": "Up the main road past the fountain, on the left, just below the big field (Main Field 1, 32) and next to Dormitory Building 2 (9).",
+      "inside": "The university cafeteria. The menu has Korean dishes, international food, Muslim-friendly options and vegetarian choices.",
+      "source": "campus map; tour.tu.ac.kr/ic/sub05_06.do (BIC news: University Cafeteria, Building No. 8)"
+    },
+    {
+      "name": "Dormitory Building 2",
+      "korean_name": "동명생활관 2호관",
+      "aliases": ["dormitory 2", "dorm 2", "female dormitory", "women's dorm", "9"],
+      "building_number": "9",
+      "location": "Up the main road on the left, next to the Student Welfare Building (8), below the Central Library.",
+      "inside": "Dormitory for domestic female students: 292 beds in 74 rooms. See the dormitory FAQ for rules and hours.",
+      "source": "campus map; tu.ac.kr/english/sub02_09.do"
+    },
+    {
+      "name": "Central Library",
+      "korean_name": "중앙도서관",
+      "aliases": ["library", "libary", "books", "reading room", "study room", "study", "borrow", "10"],
+      "building_number": "10",
+      "location": "At the top of the main road, behind the big field (Main Field 1, 32).",
+      "inside": "Basement: big conference room and preservation library. 1st floor: open reading room and librarian desk. 3rd floor: humanities and social science books. 4th floor: engineering and architecture design books. 5th floor: language and literature books. 12 group study rooms on floors 3 to 5, for up to 8 people, booked on the library homepage.",
+      "hours": "During the semester the open reading room on the 1st floor is open every day from 6 AM to 11 PM. The book rooms on floors 3 to 5 are open 9 AM to 9 PM on weekdays and closed on weekends and holidays. Vacation hours are shorter.",
+      "notes": "Borrow books with your student ID card. Website: lib.tu.ac.kr",
+      "source": "tu.ac.kr/english/sub05_01.do; campus map"
+    },
+    {
+      "name": "Tongmyong Hall",
+      "korean_name": "동명관",
+      "aliases": ["tongmyong hall", "dongmyeong hall", "11"],
+      "building_number": "11",
+      "location": "Upper right part of campus, near the top of the right-hand road, above the Companion Animal Building (12).",
+      "source": "campus map"
+    },
+    {
+      "name": "Companion Animal Building",
+      "korean_name": "반려동물관",
+      "aliases": ["companion animal", "pet", "animal building", "pets", "12"],
+      "building_number": "12",
+      "location": "Upper right part of campus, between Tongmyong Hall (11) and ICT Building 2 (13).",
+      "inside": "College of Companion Animal.",
+      "source": "campus map"
+    },
+    {
+      "name": "ICT Building 1",
+      "korean_name": "ICT 1관",
+      "aliases": ["ict 1", "ict building 1", "ict one", "computer science", "software", "ai", "game", "15"],
+      "building_number": "15",
+      "location": "Upper middle of campus, to the right of the Central Library and the big field.",
+      "inside": "College of ICT Convergence (School of AI, computer science, software, game and engineering departments use the ICT buildings).",
+      "source": "campus map; tu.ac.kr/english/sub03_01_01.do"
+    },
+    {
+      "name": "ICT Building 2",
+      "korean_name": "ICT 2관",
+      "aliases": ["ict 2", "ict building 2", "ict two", "13"],
+      "building_number": "13",
+      "location": "Right side of campus along the upper road, next to ICT Building 3 (14).",
+      "inside": "College of ICT Convergence.",
+      "source": "campus map"
+    },
+    {
+      "name": "ICT Building 3",
+      "korean_name": "ICT 3관",
+      "aliases": ["ict 3", "ict building 3", "ict three", "14"],
+      "building_number": "14",
+      "location": "Right side of campus, below ICT Building 2 (13).",
+      "inside": "College of ICT Convergence.",
+      "source": "campus map"
+    },
+    {
+      "name": "Faculty Research Building",
+      "korean_name": "교수연구동",
+      "aliases": ["faculty", "professor", "professors", "professor office", "research building", "16"],
+      "building_number": "16",
+      "location": "Middle right of campus, just below ICT Building 1 (15).",
+      "inside": "Professors' offices and research rooms.",
+      "source": "campus map"
+    },
+    {
+      "name": "International College Building",
+      "korean_name": "국제대학관",
+      "aliases": ["international college building", "admissions", "admission office", "global education center", "international office", "international students", "visa", "korean language program", "co-working space", "17"],
+      "building_number": "17",
+      "location": "Middle right of campus, next to the BIC office (19) and below the Faculty Research Building (16).",
+      "inside": "Admissions office. Global Education Center (international admissions) in Room 304. A co-working space.",
+      "phone": "Admissions 051-629-3011. Global Education Center 051-629-3018.",
+      "source": "tu.ac.kr/english/sub02_10.do; tu.ac.kr/english/sub02_13.do; campus map"
+    },
+    {
+      "name": "Tongmyong Technical High School",
+      "korean_name": "동명공업고등학교",
+      "aliases": ["high school", "technical high school", "18"],
+      "building_number": "18",
+      "location": "Right side of campus, along the road on the right, below the International College Building.",
+      "notes": "This is a separate high school, not a university building.",
+      "source": "campus map"
+    },
+    {
+      "name": "Busan International College Office",
+      "korean_name": "부산국제대학 (BIC) 사무실",
+      "aliases": ["bic", "busan international college", "international college", "bic office", "english program", "academic affairs", "course registration", "korean language clinic", "english clinic", "register", "registration", "class registration", "enroll in classes", "withdraw", "leave of absence", "credit transfer", "19"],
+      "building_number": "19",
+      "location": "Middle right of campus, next to the International College Building (17), near Yongma Plaza (26).",
+      "inside": "Busan International College (English-taught programs) office and academic affairs: course registration, withdrawal, credit transfer, leave of absence. The BIC Student Community Center and Korean Language Clinic Center are in the International College Building.",
+      "phone": "051-629-2051",
+      "notes": "BIC programs: Global Business, AI and Computer Engineering, Information System and Security, Mechanical and Automotive Engineering, Global Korean Studies, Tech Management and Innovation, Digital Design and Marketing.",
+      "source": "tour.tu.ac.kr/ic/sub01_11.do; tour.tu.ac.kr/ic/sub04_05.do; tu.ac.kr/ic/index.do"
+    },
+    {
+      "name": "International Industry-Academia Cooperation Building",
+      "korean_name": "국제산학협력관",
+      "aliases": ["industry academia", "industry cooperation", "cooperation building", "21"],
+      "building_number": "21",
+      "location": "Lower right side of campus, along the road towards Gate 2.",
+      "source": "campus map"
+    },
+    {
+      "name": "Gaonnuri",
+      "korean_name": "가온누리",
+      "aliases": ["gaonnuri", "gaon nuri", "22"],
+      "building_number": "22",
+      "location": "Next to the main road, left of the big field (Main Field 1, 32), across from the Student Welfare Building.",
+      "source": "campus map"
+    },
+    {
+      "name": "Do-ing Hall",
+      "korean_name": "Do-ing관",
+      "aliases": ["doing hall", "do-ing", "do-ing hall", "24"],
+      "building_number": "24",
+      "location": "Just below the Circular Plaza (34), on the left side of the main road near the fountain.",
+      "source": "campus map"
+    },
+    {
+      "name": "Student Cafe",
+      "korean_name": "학생휴게점",
+      "aliases": ["cafe", "coffee", "snack", "snacks", "drink", "tea", "convenience store", "42"],
+      "building_number": "42",
+      "location": "On the main road, between the Graduate School (4) and the Student Welfare Building (8).",
+      "inside": "Student cafe and rest point.",
+      "source": "campus map"
+    },
+    {
+      "name": "Dormitory Building 1",
+      "korean_name": "동명생활관 1호관",
+      "aliases": ["dormitory", "dorm", "dormitory 1", "dorm 1", "residence hall", "hostel", "housing", "43"],
+      "building_number": "43",
+      "location": "At the very top of campus, above the upper area, up the hill past Seondang (23).",
+      "inside": "Dormitory for domestic and international students: 671 beds in 229 rooms, 10 floors. Dining hall, convenience store, fitness center, laundry, kitchen, computer room and 24-hour study room. A room for students with disabilities is on the 2nd floor.",
+      "source": "campus map; tu.ac.kr/english/sub02_09.do"
+    },
+    {
+      "name": "Sports Complex",
+      "korean_name": "종합체육시설",
+      "aliases": ["sports", "gym", "sports complex", "tennis", "tennis court", "basketball", "exercise", "36"],
+      "building_number": "36",
+      "location": "In the middle of campus to the right of the main road, behind the Circulation Bus Stop (39), next to Parking Lot 3 (37).",
+      "inside": "Sports courts including tennis courts.",
+      "source": "campus map; tu.ac.kr/tour/sub01_04.do"
+    },
+    {
+      "name": "Main Field 1",
+      "korean_name": "대운동장1",
+      "aliases": ["main field", "field", "football", "soccer", "playground", "artificial turf", "32"],
+      "building_number": "32",
+      "location": "In the upper middle of campus, in front of the Central Library (10).",
+      "inside": "Artificial turf field, used for events like BIC Sports Day.",
+      "source": "campus map; tour.tu.ac.kr/ic/sub05_06.do"
+    },
+    {
+      "name": "Main Field 2",
+      "korean_name": "대운동장2",
+      "aliases": ["field 2", "second field", "33"],
+      "building_number": "33",
+      "location": "Middle of campus, right of the main road, below the Sports Complex (36).",
+      "source": "campus map"
+    },
+    {
+      "name": "Circular Plaza",
+      "korean_name": "원형광장",
+      "aliases": ["circular plaza", "round plaza", "plaza", "34"],
+      "building_number": "34",
+      "location": "In front of the Main Building (1), to the left of the fountain.",
+      "source": "campus map"
+    },
+    {
+      "name": "Yongma Plaza",
+      "korean_name": "용마광장",
+      "aliases": ["yongma", "yongma plaza", "26"],
+      "building_number": "26",
+      "location": "Upper right of campus, between ICT Building 1 (15) and ICT Building 2 (13).",
+      "source": "campus map"
+    },
+    {
+      "name": "Campus Shuttle and Circulation Bus Stop",
+      "korean_name": "순환버스정류장",
+      "aliases": ["shuttle", "shuttle bus", "bus stop", "circulation bus", "school bus", "39"],
+      "building_number": "39",
+      "location": "Next to the main road, right side, just above the fountain. The commuter shuttle stops in front of Parking Lot 3 (37), next to the tennis courts.",
+      "hours": "Weekdays during the semester 8 AM to 7:20 PM: every 10 to 15 minutes until 11 AM, every 30 minutes from 11 AM to 4 PM, every 10 minutes after 4 PM. Vacation: 9 AM to 5 PM every 20 minutes, no service 11 AM to 3 PM. No shuttle on Saturdays, Sundays or holidays.",
+      "notes": "Route: campus, UN crossroad, Daeyeon-dong intersection, Kyungsung University, back to campus. City stops: near Daeyeon Station exit 1 and Kyungsung University and Pukyong National University Station exit 5 (Metro Line 2).",
+      "source": "tu.ac.kr/tour/sub01_04.do; tour.tu.ac.kr/ic/sub01_11.do"
+    },
+    {
+      "name": "Main Gate 1",
+      "korean_name": "제1정문",
+      "aliases": ["main gate", "gate 1", "front gate", "entrance", "exit", "27"],
+      "building_number": "27",
+      "location": "At the bottom of campus. The main road runs from here up the hill past the parking booth and fountain.",
+      "source": "campus map"
+    },
+    {
+      "name": "Gate 2",
+      "korean_name": "제2정문",
+      "aliases": ["gate 2", "second gate", "28"],
+      "building_number": "28",
+      "location": "Lower right corner of campus.",
+      "source": "campus map"
+    },
+    {
+      "name": "Gate 3",
+      "korean_name": "제3정문",
+      "aliases": ["gate 3", "third gate", "back gate", "29"],
+      "building_number": "29",
+      "location": "Right side of campus, on the road near ICT Building 3 (14).",
+      "source": "campus map"
+    },
+    {
+      "name": "Parking Lots",
+      "korean_name": "주차장",
+      "aliases": ["parking", "park", "car", "parking lot", "30", "31", "37", "38"],
+      "location": "Parking Lot 1 (30) is lower left near the Student Union. Parking Lot 2 (31) is near Main Gate 1, right of the main road. Parking Lot 3 (37) is by the tennis courts and is the shuttle stop. Parking Lot 5 (38) is in the upper right corner. The parking control booth (35) is on the main road just inside Main Gate 1.",
+      "source": "campus map"
+    },
+    {
+      "name": "University Animal Hospital",
+      "korean_name": "대학동물병원",
+      "aliases": ["animal hospital", "vet", "veterinary", "47"],
+      "building_number": "47",
+      "location": "Upper right corner of campus.",
+      "source": "campus map"
+    },
+    {
+      "name": "Green Startup Town and Startup Hub",
+      "korean_name": "그린스타트업타운 / 창업거점지구",
+      "aliases": ["startup", "start up", "startup town", "green startup town", "startup hub", "entrepreneurship", "46", "48"],
+      "building_number": "46 and 48",
+      "location": "Far upper right corner of campus.",
+      "source": "campus map"
+    },
+    {
+      "name": "Gardens and Rest Areas",
+      "korean_name": "마지뜨락 / 동명뜰 / 쉼터 / 분수대",
+      "aliases": ["garden", "fountain", "rest area", "relax", "maji garden", "tongmyong garden", "20", "40", "41", "44"],
+      "location": "The fountain (41) is on the main road just inside Main Gate 1. Maji Garden (40) is the pond garden right of the main road near Main Gate 1. Tongmyong Garden (44) is at the top of campus. A rest area (20) is near the International College Building.",
+      "source": "campus map"
+    },
+    {
+      "name": "Other campus buildings",
+      "korean_name": "선당 / 봉사관 / 체육시설관리동",
+      "aliases": ["seondang", "volunteer", "volunteer hall", "23", "25", "45"],
+      "location": "Seondang (23) is a traditional-style hall at the top middle of campus. Volunteer Service Hall (25) is next to the main road by the Student Welfare Building. The sports facilities management building (45) is next to the Sports Complex.",
+      "source": "campus map"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is the address of the university?",
+      "keywords": ["address", "where is the university", "location", "postcode", "zip"],
+      "answer": "Tongmyong University is at 428 Sinseon-ro, Nam-gu, Busan, postcode 48520. In Korean: 부산광역시 남구 신선로 428."
+    },
+    {
+      "question": "How do I get here by bus or subway?",
+      "keywords": ["bus", "subway", "metro", "train", "get here", "transport", "how to come", "station", "taxi", "seomyeon", "haeundae", "nampo", "nampo-dong", "yeongdo", "songdo", "yongho-dong", "namcheon", "downtown", "city"],
+      "answer": "City buses stop near campus: bus 8 goes to Yongho-dong and Namcheon-dong, 134 to Nampo-dong, 10, 68 and 583 to Seomyeon, and 1011 to Songdo, Yeongdo and Haeundae. The nearest subway stations are Daeyeon Station and Kyungsung University and Pukyong National University Station on Metro Line 2. A free school shuttle runs between those stations and campus on weekdays."
+    },
+    {
+      "question": "What is the phone number of the university?",
+      "keywords": ["phone", "call", "contact", "number", "telephone", "fax"],
+      "answer": "The main number is 051-629-3014. Admissions is 051-629-3011, the Global Education Center is 051-629-3018, and Busan International College is 051-629-2051."
+    },
+    {
+      "question": "What are the dormitory rules and hours?",
+      "keywords": ["dormitory rules", "dorm hours", "curfew", "dorm fee", "dormitory fee", "laundry", "dorm food", "dorm dining", "hot water"],
+      "answer": "There are three dormitory buildings with 1,065 beds. The entrance is open 5 AM to 11:30 PM with your access card. Dorm dining: weekday breakfast 7:15 to 8:45 AM, weekend breakfast 7:30 to 9 AM, dinner 5:30 to 7 PM. Laundry costs 1,000 won to wash and 500 won to dry. The fee is about 1,900,000 won per semester. Building 3, for international students, is off campus at 147 UN pyeonghwa-ro."
+    },
+    {
+      "question": "What colleges does the university have?",
+      "keywords": ["colleges", "departments", "majors", "faculties", "courses", "programs", "study here", "what can i study"],
+      "answer": "Tongmyong has the College of ICT Convergence, Companion Animal, Business Administration, Health Welfare and Education, Beauty Art, Architecture and Design, Media, Future Multidisciplinary Studies, and Busan International College, which teaches in English."
+    },
+    {
+      "question": "How do I apply as an international student?",
+      "keywords": ["apply", "application", "admission", "enroll", "international student", "foreign student", "join"],
+      "answer": "Apply online, then there is a document review and sometimes an interview. After you're accepted you pay tuition and receive your admission letter. The Global Education Center in Building 17, Room 304 can help, phone 051-629-3018."
+    },
+    {
+      "question": "Who is the president of the university?",
+      "keywords": ["president", "chairman", "chairperson", "rector", "head of university", "founder"],
+      "answer": "The president is Dr. Lee Sang-cheon, the 11th president, since April 2025. The university was founded by Dr. Kang Seok-jin."
+    },
+    {
+      "question": "Is there help for students with disabilities?",
+      "keywords": ["disability", "disabled", "wheelchair", "accessible", "accessibility"],
+      "answer": "Yes. There is a rest area for students with disabilities on the 1st floor of the Main Building, a club room on the 3rd floor of the Student Union Building, and an accessible dorm room on the 2nd floor of Dormitory Building 1. Accessible parking spots are marked around campus."
+    },
+    {
+      "question": "Where is the campus map?",
+      "keywords": ["map", "campus map", "virtual tour", "tour"],
+      "answer": "There's a campus map and a virtual tour on the university website, tu.ac.kr. Buildings are numbered 1 to 48, so just ask me about a building number."
+    },
+    {
+      "question": "Who are you / what can you do?",
+      "keywords": ["who are you", "what are you", "who made you", "your name", "what can you do"],
+      "answer": "I'm the Tongmyong University campus help robot. I can say hello and help you find buildings, offices and services on campus."
+    }
+  ]
+}
