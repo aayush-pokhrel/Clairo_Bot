@@ -6,7 +6,9 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 ROOT = Path(__file__).resolve().parent.parent
-load_dotenv(ROOT / ".env.example")  # GROQ_API_KEY lives here (gitignored, never committed)
+# GROQ_API_KEY is read from .env.example or .env (both gitignored, never committed).
+for _env_file in (".env.example", ".env"):
+    load_dotenv(ROOT / _env_file)
 
 # --- Camera ---
 CAMERA_INDEX = 0
