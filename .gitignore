@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets / local config (never commit)
+.env
+.env.*
+*.pem
+*.key
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Models not used by the app (experiments). The app only needs
+# gesture_recognizer.task and face_landmarker.task, which are committed.
+hand_landmarker.task
+facial_expression_recognition.onnx
+*.pt
+*.onnx
+
+# Local experiment scripts
+pose_test.py
+webcam_test.py

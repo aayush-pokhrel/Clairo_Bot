@@ -1,0 +1,11 @@
+[project]
+name = "robotvision"
+version = "0.1.0"
+description = "Real-time webcam gesture companion robot with a friendly spoken personality"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mediapipe>=1.0.1",
+    "pyttsx3>=2.99",
+    "ultralytics>=8.4.155",
+]
